@@ -51,7 +51,6 @@ body{
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
-
 .botao-fist-child{
     border-radius: 40px 40px 0 0;
 }
@@ -59,13 +58,27 @@ body{
    display: block;
 }
 @media screen and (min-width: 768px)
-    .botoes{
+    .botao.ativo{
         display: flex;
     }
-
     .botao-fist-child {
         border-radius: 40px 0 0 0;
     }
     .botao-fist-child {
         border-radius: 0 40px 0 0;
+    }
+    .abas-textos{
+        background-color:var(--texto-fundo) ;
+        padding: 40px;
+        border-radius: 0 0 40px 40px;
+    }
+    .aba-conteudo.ativo{
+        display: block;
+        
+    }
+    .aba-conteudo{
+        display: none;
+    }
+    .aba-conteudo-titulo-principal{
+        font-size: 28px;
     }
